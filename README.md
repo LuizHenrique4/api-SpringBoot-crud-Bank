@@ -16,7 +16,7 @@ This project was developed as a project to be presented to a Squad of developers
 - JPA
 - Spring Data
 - Maven 
-- Swawgger
+- Swagger
 
 ## Endpoints
 - findAll
