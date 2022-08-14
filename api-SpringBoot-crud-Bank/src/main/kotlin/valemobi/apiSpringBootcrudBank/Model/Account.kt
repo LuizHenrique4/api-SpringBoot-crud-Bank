@@ -1,4 +1,4 @@
-package com.valemobi.bank.Model
+package valemobi.apiSpringBootcrudBank.Model
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

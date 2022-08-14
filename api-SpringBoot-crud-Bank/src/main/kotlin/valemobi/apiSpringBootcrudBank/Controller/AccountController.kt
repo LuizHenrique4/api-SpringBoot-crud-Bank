@@ -1,7 +1,7 @@
-package com.valemobi.bank.Controller
+package valemobi.apiSpringBootcrudBank.Controller
 
-import com.valemobi.bank.Model.Account
-import com.valemobi.bank.Repository.AccountRepository
+import valemobi.apiSpringBootcrudBank.Model.Account
+import valemobi.apiSpringBootcrudBank.Repository.AccountRepository
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*
 class AccountController(private val repository: AccountRepository) {
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     fun create(@RequestBody account: Account): Account = repository.save(account)
 
     @GetMapping
@@ -39,5 +40,4 @@ class AccountController(private val repository: AccountRepository) {
             repository.delete(it)
             ResponseEntity<Void>(HttpStatus.OK)
         }.orElse(ResponseEntity.notFound().build())
-
 }
