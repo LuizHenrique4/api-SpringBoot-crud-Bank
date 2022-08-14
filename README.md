@@ -14,8 +14,9 @@ This project was developed as a project to be presented to a Squad of developers
 - Spring Web
 - H2 Database
 - JPA
-_ Spring Data
+- Spring Data
 - Maven 
+- Swawgger
 
 ## Endpoints
 - findAll
