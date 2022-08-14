@@ -5,6 +5,8 @@ This project was developed as a project to be presented to a Squad of developers
 **Objective:** Create a Web API using Kotlin in a Database Domain using the SpringBoot framework using a functional approach.
 
 1. [Stack](#stack)
+2. [Endpoints](#endpoints)
+3. [Tests](#tests)
 
 ## Stack   
 - Kotlin
@@ -14,3 +16,17 @@ This project was developed as a project to be presented to a Squad of developers
 - JPA
 _ Spring Data
 - Maven 
+
+## Endpoints
+- findAll
+- findById
+- createAccount
+- updateAccount
+- deleteAccount
+
+## Tests
+- findAllTest
+- findByIdTest
+- createAccountTest
+- updateAccountTest
+- deleteAccountTest
